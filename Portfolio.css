@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition-duration: .2s;
+}
+
+
+
+.menu ol {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    background-color: gray;
+}
+
+nav{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu  h2{
+position: relative;
+margin: auto auto;
+animation-name: welcome;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+.menu{
+    background-color: grey;
+    display: flex;
+}
+.menu ol li {
+    padding: 20px;
+}
+
+.menu ol{
+    margin-left: 50px;
+}
+
+.container img {
+    position: relative;
+    float: right;
+    position: relative;
+    right: 220px;
+}
+
+.name {
+    padding-top: 160px;
+    padding-left: 160px;
+}
+
+.name span {
+    color: greenyellow;
+    transition-duration: 1s;
+}
+
+.role {
+    padding-top: 20px;
+    padding-left: 160px;
+}
+.role span{
+    color: greenyellow;
+}
+
+.desc {
+    padding-top: 10px;
+    padding-left: 160px;
+    text-align: justify;
+}
+
+.resume {
+    padding-top: 30px;
+    padding-left: 160px;
+}
+
+.resume a{
+    text-decoration: none;
+    color: black;
+    background-color: greenyellow;
+    padding: 10px;
+    border-radius: 8px;
+    transition-duration: .2s;
+}
+
+.resume :nth-child(1){
+    margin-right: 20px;
+}
+.resume :nth-child(2){
+    margin-left: 30px;
+}
+
+.img :nth-child(1) {
+    animation-name: ball;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    transition-duration: .5s;
+
+}
+
+.me{
+    position: relative;
+    top: -30px;
+    left: 60px;
+}
+
+.me,
+.name,
+.role,
+.desc {
+    transition-duration: 2s;
+}
+
+.about{
+padding-top: 22rem;
+margin-left: 180px;
+}
+
+.about p{
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.about p span{
+    color: greenyellow;
+}
+
+.skills,.experience,.education{
+    margin-top: 20px;
+}
+
+.skills ul{
+    margin: 10px;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+.skills ul li{
+padding: 5px;
+font-size: 20px;
+}
+
+.experience ul{
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.experience h3{
+    margin-top: 20px;
+    color: greenyellow;
+}
+
+.experience ul li{
+padding: 5px;
+font-size: 20px;
+}
+
+.education h3{
+    padding-top: 20px;
+    color: greenyellow;
+}
+.education h2{
+    padding: 10px;
+    border-radius: 8px;
+}
+.skills h2{
+    padding: 10px;
+    border-radius: 8px;
+}
+.experience h2{
+    padding: 5px;
+    border-radius: 8px;
+}
+.about h2{
+   
+    display: inline;
+}
+
+.skills ul li span{
+    color: greenyellow;
+}
+
+.contact h1{
+    margin-top: 150px;
+    margin-left: 185px;
+    display: inline;
+    border-radius: 8px;
+    position: relative;
+    top: 50px;
+}
+.contact ul{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact ul li{
+    list-style: none;
+}
+
+.contact ul li a{
+    text-decoration: none;
+}
+
+.contact ul li a img{
+    transition-duration: .5s;
+}
+
+
+/* footer{
+    background-color: blue;
+} */
+@keyframes ball {
+    0% {
+        top: -100px;
+        bottom: 200px;
+    }
+
+    50% {
+        top: -110px;
+        bottom: 200px;
+    }
+
+    100% {
+
+        bottom: 210px;
+        top: -100px;
+    }
+}
+
+.resume a:hover {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.menu li a:hover {
+    background-color: black;
+    padding: 10px;
+    
+}
+
+.img img:hover {
+    transform: scale(1.1);
+}
+
+.name span:hover {
+    letter-spacing: 4px;
+}
+
+.me:hover {
+    letter-spacing: 1px;
+}
+
+.contact ul li a img:hover{
+    transform: scale(1.5);
+}
+
+@keyframes welcome {
+0%{
+    letter-spacing: 0px;
+    /* text-shadow: 0 0 0px black; */
+}
+75%{
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px black;
+    }
+100%{
+letter-spacing: 0px;
+text-shadow: 0 0 2px black;
+}
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+.menu{
+    display: inline-block;
+}
+
+.menu ol{
+    position: relative;
+    left: -10%;
+    margin-right: 0px;
+}
+.menu ol li{
+    padding: 10px;
+    margin: auto auto;
+}
+.menu h2{
+    /* margin-left: 20px;
+    margin-right: -20px;
+    margin-bottom: 10px;
+    font-size: 30px; */
+    display: none;
+}
+.container img{
+width: 400px;
+height: 400px;
+}
+.container .img{
+    position: relative;
+    left: 50%;
+    top: 100px;
+}
+.container .me{
+position: relative;
+left: -30%;
+bottom:800px;
+}
+
+.desc p{
+line-height: 1.5;
+text-align: justify;
+}
+.me:hover {
+    letter-spacing: 0px;
+}
+
+.resume :nth-child(1){
+    margin-right: 20px;
+}
+.resume :nth-child(2){
+    margin-left: 0px;
+}
+
+.resume a:hover {
+    padding: 8px;
+    font-size: 18px;
+}
+
+.about{
+    padding-top: 2rem;
+    margin-left: 10px;
+    }
+    .about p{
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.5;
+        margin:1px auto ;
+        padding: 2px;
+    }
+    .contact h1{
+        margin-top: 150px;
+        margin-left: 20px;
+        display: inline;
+        border-radius: 8px;
+        position: relative;
+        top: 50px;
+    }
+    .contact ul{
+        margin-top: 80px;
+        display: flex;
+        justify-content:  flex-start;
+        padding: 0;
+        margin-left: 0;
+    }
+    .contact ul li{
+        padding-left:20px ;
+    }
+  }
